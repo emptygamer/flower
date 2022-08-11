@@ -1,0 +1,10 @@
+[show]
+You can use [[stop] or call Stop function to stop the system,[r]and using [[resume] or call Resume function to resume the progress (invoke [[resume] by "SetText").[w]
+With stop and resume, you can integrate with your gameplay system.[w]
+You can also setup buttons easily by calling "SetupButtonUIPrefab" and "SetupButtonItem" with your customized functions.[w]
+If you want to show variable in this the dialog, you can use "SetDisplayVariable" to set up the key and the value of variable.[lr]
+And using [[#YOUR_VARIABLE_NAME] to show the value.[w]
+My name is : [#MyName] [w]
+--- This is the demo --- [w]
+You see a door, and a key.
+[stop]

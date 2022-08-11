@@ -1,0 +1,3 @@
+[c]You open the door with the key.[w]
+Congratulations!! (･ิω･ิ)[lr]
+--- DEMO END ---

@@ -1,5 +1,3 @@
-
-
 # 🌺 Flower
 <img src="./flower_logo.png" alt="flower_logo"/>
 

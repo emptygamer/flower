@@ -65,14 +65,16 @@ Setup UI Objects.
     <br>Prefab(Canvas) -> ButtonPanel(Image)
     ```C#
     ESMessageSystem msgSys;
-    msgSys.SetupDialogUIPrefab("DefaultDialogUIPrefab");
+    msgSys.SetupButtonUIPrefab("DefaultButtonUIPrefab");
     ```
 - **Button Item UI**
     <br>Prefab(Button) -> Text(Text)
     <br>Will put the button in **ButtonPanel**, need to setup **Button UI** first.
     ```C#
     ESMessageSystem msgSys;
-    msgSys.SetupDialogUIPrefab("DefaultDialogUIPrefab");
+    msgSys.SetupButtonItem("DefaultButtonItemPrefab","DISPLAY_NAME",()=>{
+        // Button function...
+    });
     ```
 
 - ## **Show variable values**
@@ -102,4 +104,8 @@ msgSys.SetText("[Resume]") // Invoke resume using text.
 ```
 
 - ## **Integrate and Logic Control**
-**Check [UsageCase.cs]() for more detail.**
+Check **UsageCase.cs** for more detail.
+
+
+- ## **Tutorial**
+[![Youtube-Tutorial](https://i.ytimg.com/vi/QJhqPY2lL1o/hq720.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLDvfLBqffyyRn3NQX25aOGVBLAyXg)](https://youtu.be/QJhqPY2lL1o)

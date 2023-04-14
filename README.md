@@ -1,5 +1,5 @@
 # 🌺 Flower
-<img src="./flower_logo.png" id="logo" alt="flower_logo"/>
+<img src="./flower_logo.png" id="logo" alt="flower_logo" style="width:256px"/>
 
 ## **Flower** : a KrKr-like dialog system for Unity.
 With Flower, you can not only setup your dialogs but also trigger functions (like **showing images, playing audios, executing customized C#...**) by plain text. 
@@ -20,6 +20,7 @@ For extensibility, you can customize your own **commands** and **effects** with 
 - [Async Commands](#async-commands) 
 - [Settings](#settings)
 - [Customized Event Functions](#customized-event-functions)
+- [Contribute](#contribute)
 ---
 
 ## Setup Flower
@@ -329,4 +330,8 @@ flowerSys.logHappened += (object sender, LogEventArgs args)=>{
     print($"[{args.type}]{args.message}");
 };
 ```
- 
+
+---
+## Contribute
+Do you want to improve Flower? Welcome :)!</br>
+If you find some bugs, have any suggestion for features / improvements, feel free to create issues or send pull requests. (●'◡'●)

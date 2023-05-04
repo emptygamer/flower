@@ -246,7 +246,9 @@ namespace Flower{
         #region User Function
         public void Next()
         {
-            isWaitingForNextToGo = false;
+            if(!isStop){
+                isWaitingForNextToGo = false;
+            }
         }
         public void SetTextList(List<string> textList, int index=0){
             this.currentTextList.Clear();
@@ -377,7 +379,7 @@ namespace Flower{
         private IEnumerator CmdFunc_l_Task(List<string> _params)
         {
             isWaitingForNextToGo = true;
-            yield return new WaitUntil(() => isWaitingForNextToGo == false);
+            yield return new WaitUntil(() => !isWaitingForNextToGo);
             yield return null;
         }
         private IEnumerator CmdFunc_r_Task(List<string> _params)
@@ -388,14 +390,14 @@ namespace Flower{
         private IEnumerator CmdFunc_w_Task(List<string> _params)
         {
             isWaitingForNextToGo = true;
-            yield return new WaitUntil(() => isWaitingForNextToGo == false);
+            yield return new WaitUntil(() => !isWaitingForNextToGo);
             msgText.Clear();   //Erase the messages.
             yield return null;
         }
         private IEnumerator CmdFunc_lr_Task(List<string> _params)
         {
             isWaitingForNextToGo = true;
-            yield return new WaitUntil(() => isWaitingForNextToGo == false);
+            yield return new WaitUntil(() => !isWaitingForNextToGo);
             msgText.Append("\n");
             yield return null;
         }

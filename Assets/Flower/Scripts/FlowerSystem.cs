@@ -8,7 +8,7 @@ using UnityEngine.UI;
 
 namespace Flower{
     /// <summary>
-    /// This is Flowser core by Rempty @ EmptyStudio.
+    /// This is Flower core by Rempty @ EmptyStudio.
     /// <para type="bold">[UserFunction]</para>
     /// <list type="bullet">
     ///     <item>RegisterCommand         : Register your customized commands.</item>

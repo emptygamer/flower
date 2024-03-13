@@ -73,15 +73,15 @@ Use brackets [*keyword*] (by defult) to set the keyword commands.
 
 #### Visual & Auditory commands use cases
 ```
-    [audio,bgm,bgm,true,0,audioTransit-1-2000]
-    [image,fg1,character_r,0,0,10,spFadeIn-1000]
+    [audio,bgm,bgm,true,0,audioTransit_1_2000]
+    [image,fg1,character_r,0,0,10,spFadeIn_1000]
     It's raining...
     [particle,p1,particle_rain,0,0]
     [wait,1000]
     [w]
     [remove,p1]
     It clears up.[w]
-    [remove,fg1,spFadeOut-1000]
+    [remove,fg1,spFadeOut_1000]
 ```
 
 ---
